@@ -18,7 +18,7 @@ INPUT_PATH, OUTPUT_PATH & BUCKET_NAME within the script will likely need changin
 To run script, run the folowing commands:
 ``` shell
 conda env update -f environment.yml
-conda activate imfe_convert_gebco
+conda activate imfe_convert_emodnet
 
 python process_emodnet -i  input_dir -o output_dir -b bucket name
 ```

@@ -15,7 +15,7 @@ rm E4_2022.nc.zip E3_2022.nc.zip
 cd ..
 
 conda env update -f environment.yml
-conda activate imfe_convert_gebco
+source activate imfe_convert_emodnet
 
 python process_emodnet -i emodnet -o . --skip-upload
 
