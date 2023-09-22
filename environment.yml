@@ -1,0 +1,10 @@
+name: imfe_convert_emodnet
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.8
+  - gdal
+  - pip
+  - pip:
+    - s3fs
+    - rioxarray
