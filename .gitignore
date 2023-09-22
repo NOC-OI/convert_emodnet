@@ -1,0 +1,7 @@
+*.pyc
+__pycache__
+data
+output
+*.log
+*.tif
+run.bat
