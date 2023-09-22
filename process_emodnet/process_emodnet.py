@@ -57,7 +57,7 @@ def merge_cogs(file_to_mosaic,output_file):
               options=["COMPRESS=LZW", "TILED=YES"])
 	return output_file
 
-def upload_jasmine(new_file, bucket, output_path):
+def upload_jasmin(new_file, bucket, output_path):
     s3 = S3FileSystem(anon=False, key=JASMIN_TOKEN, secret=JASMIN_SECRET, client_kwargs={"endpoint_url": JASMIN_API_URL})
     file_name = path.Path(new_file).name
     remote_path = f"s3://{bucket}/{output_path}/{file_name}"

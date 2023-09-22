@@ -1,6 +1,5 @@
-import click
 from pathlib import Path
-from process_emodnet import EMODNETgenerationError,process_edomnet,upload_jasmine, merge_cogs
+from process_emodnet import EMODNETgenerationError,process_edomnet,upload_jasmin, merge_cogs
 import shutil
 import os
 
@@ -42,7 +41,7 @@ def main(input: str, output: str, bucket: str, skip_upload: bool):
     if not skip_upload:
         try:
             # Upload to cloud storage
-            upload_jasmine(new_file_path, bucket, output_path)
+            upload_jasmin(new_file_path, bucket, output_path)
         except EMODNETgenerationError:
             print("Exception Occurred:EDOMNet files not uploaded to JASMIN")
 
